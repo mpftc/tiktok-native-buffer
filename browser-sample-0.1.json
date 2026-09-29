@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-29",
+  "environment": "Chrome TikTok temporary page injection; settings not persisted",
+  "source": "Observed runtime snapshots; media URLs and account information omitted",
+  "indexedSampleAfterRetentionFix": {
+    "videoDurationSeconds": 144.161133,
+    "currentTimeSeconds": 72.779893,
+    "readyState": 4,
+    "mediaError": null,
+    "indexedTracks": ["video", "audio"],
+    "nativeAheadSeconds": 35.05344,
+    "preparedAheadSeconds": 59.75344033333333,
+    "maxConcurrency": 8,
+    "peakRequests": 8,
+    "budgetBytes": 268435456,
+    "residentBytes": 14312465,
+    "reservedBytes": 786432,
+    "peakManagedBytes": 18728117,
+    "failures": 0,
+    "fallbacks": 0,
+    "settingsResetObservationSecondsApprox": 52,
+    "receivedBytesDuringObservation": 3752782,
+    "requestsDuringObservation": 26,
+    "evictedUnusedPrefetchBytesDuringObservation": 0
+  },
+  "laterNavigationSample": {
+    "readyState": 4,
+    "mediaError": null,
+    "lastTransportError": "RANGE",
+    "failures": 2,
+    "fallbacks": 2,
+    "peakRequests": 8,
+    "residentBytes": 4140390,
+    "reservedBytes": 0,
+    "note": "Playback continued; exact response-range differences were not captured."
+  },
+  "limitations": [
+    "No throughput A/B benchmark",
+    "No Tampermonkey installation acceptance",
+    "No long-duration memory or traffic guarantee",
+    "Automated byte-equivalence uses deterministic fixtures"
+  ]
+}

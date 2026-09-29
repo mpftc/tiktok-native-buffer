@@ -1,0 +1,9 @@
+{
+  "name": "tiktok-native-buffer",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Native TikTok Fetch range cache and prefetch userscript",
+  "license": "MIT",
+  "scripts": { "build": "node build.cjs", "test": "node --test test/*.test.cjs" },
+  "engines": { "node": ">=20" }
+}

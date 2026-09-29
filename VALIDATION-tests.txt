@@ -1,0 +1,44 @@
+✔ single ranges and integer boundaries (1.5564ms)
+✔ strict media eligibility preserves unrelated requests (17.2279ms)
+✔ overlapping reads share in-flight and resident intervals (34.6911ms)
+✔ one consumer abort does not cancel another consumer (46.7782ms)
+✔ canceling the last waiter aborts the bounded request (60.0017ms)
+✔ open range streams byte-exactly through EOF including file tail (93.5047ms)
+✔ finite ranges clamp at EOF; clone keeps response metadata (31.2518ms)
+✔ backpressure and cancel prevent whole-file eager download (45.5181ms)
+✔ stream abort reaches body and frees request reservations (62.7605ms)
+✔ all resources and tracks share a maximum of eight requests (141.268ms)
+✔ cache budget includes output and in-flight memory (465.2327ms)
+✔ store evicts unpinned distant resources first (0.299ms)
+▶ invalid status, ranges and short bodies never enter cache
+  ✔ {"status":200} (15.1018ms)
+  ✔ {"status":416} (30.1008ms)
+  ✔ {"short":true} (31.3988ms)
+  ✔ {} (15.4271ms)
+  ✔ {} (16.3686ms)
+✔ invalid status, ranges and short bodies never enter cache (109.3697ms)
+✔ changed resource identity is rejected; signed URLs stay separate (30.2606ms)
+✔ before response failure falls back once to original fetch (16.012ms)
+✔ scheduler preempts background and never exceeds global ceiling (15.0625ms)
+✔ unrelated POST Request bodies are not disturbed (2.4506ms)
+✔ SIDX v0/v1 timeline, keyframe backtrack and independent track intersection (0.995ms)
+✔ cached timeline requires initialization and decode predecessors (0.214ms)
+✔ unknown progressive MP4 falls back without inventing a time index (0.0782ms)
+✔ feed models match DASH audio by file identity (0.385ms)
+✔ expired registry references cannot restart prefetch outside retention accounting (1.861ms)
+✔ highest resolution beats bitrate; unsupported codecs remain excluded (0.9325ms)
+✔ native and feed models choose the same highest variant (0.2102ms)
+✔ single native version is cloned with its matching audio and codec (0.7505ms)
+✔ missing required DASH audio preserves original native config (0.0993ms)
+✔ disarmed or disabled policy leaves original configuration intact (0.095ms)
+✔ existing native player switches through its own path with playback state preserved (0.4888ms)
+✔ future native initialization is constrained; disabling restores original choices (0.269ms)
+✔ quality preparation can register an upcoming video before any native selection (0.5811ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1279.5232

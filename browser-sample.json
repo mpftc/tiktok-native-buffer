@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-29",
+  "version": "0.2.0",
+  "context": "independent Chrome tab, temporary diagnostic build, highest quality enabled",
+  "afterTwoScrolls": {
+    "quality": {"status":"locked","label":"1080P","definition":"adapt_lowest_1080_1"},
+    "concurrency":8,"activeRequests":0,"peakRequests":8,
+    "budgetBytes":268435456,"residentBytes":14036219,"peakBytes":21759821,
+    "currentTime":11.507845,"nativeAhead":2.562041,"preparedAhead":2.562041,
+    "currentIndex":[{"role":"muxed","indexed":false,"complete":true}],
+    "nextTarget":5,"nextAvailable":5,"nextReady":4,
+    "received":15084795,"delivered":4325269,"hits":4221090,
+    "requests":98,"completed":79,"failures":0,"canceled":23,"fallbacks":0,"intercepted":7,"wastedPrefetch":1048576,
+    "players":[
+      {"quality":"adapt_lowest_1080_1","choices":1,"width":1080,"height":1082,"readyState":4,"error":null,"paused":false},
+      {"quality":"adapt_lowest_1080_1","choices":1,"width":1080,"height":1920,"readyState":4,"error":null,"paused":true}
+    ]
+  },
+  "nativeAutomaticAfterToggle":{"quality":"native","candidateCounts":[5,4]},
+  "limitations":["Finite functional observation, no speed benchmark","Cache hits include replay and native reads; not all represent prefetch savings","Not installed as 0.2.0 in Tampermonkey"]
+}
